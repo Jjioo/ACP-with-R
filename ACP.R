@@ -126,6 +126,25 @@ contribution_table = contribution_Table_f(contribution_table,CP,lamdas)
 print(contribution_table)
 
 
+#draw ind
+plot(CP[,1], CP[,2], 
+     xlab="X Axis", ylab="Y Axis", 
+     main="Scatter Plot with X and Y Axes", 
+     col="blue", pch=19, asp=1)
+
+# Add X and Y axes at zero
+abline(h=0, col="black", lwd=2)  # Horizontal (X-axis)
+abline(v=0, col="black", lwd=2)  # Vertical (Y-axis)
+
+grid()  # Add grid for better visualization
+
+
+#draw cercle
+
+ 
+
+plot(var_cordinate, xlim=c(-1,1), ylim=c(-1,1), pch=19, col="blue", asp=1)
+symbols(0, 0, circles=1, add=TRUE, inches=FALSE, lwd=2)  # Draw circle
 
 
 
